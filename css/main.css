@@ -1,0 +1,45 @@
+:root {
+    --gray-dark: #51565d;
+    --gray-light: #ccc;
+}
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    height: 20vh;
+    background-color: var(--gray-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-light);
+}
+
+
+.main .main__Section {
+    width: 80%;
+    margin: 4rem auto;
+    padding: 2rem;
+    box-shadow: 0 2px 20px var(--gray-light);
+    border-radius: 10px;
+}
+
+.main .main__Section p {
+    /* divide las columnas del texto, no se recomienda en textos muy largos*/
+    column-count: 3;
+    column-gap: 2rem;
+    /* borde entre las columnas     palabra clave / estilo / color */
+    column-rule: 2px solid var(--gray-light);
+}
+
+.footer {
+    height: 20vh;
+    background-color: var(--gray-dark);
+}
